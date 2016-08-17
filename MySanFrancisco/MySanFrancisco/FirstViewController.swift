@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, GMSMapViewDelegate {
     
     override func loadView() {
         let camera = GMSCameraPosition.camera(withLatitude: 1.285, longitude: 103.848, zoom: 12)
@@ -19,6 +19,7 @@ class FirstViewController: UIViewController {
         mapView.padding = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 300.0, right: 5.0)
         mapView.settings.compassButton = true
         mapView.settings.myLocationButton = true
+        mapView.delegate = self
         self.view = mapView
     }
 
@@ -30,6 +31,23 @@ class FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - GMSMapViewDelegate
+    
+    public func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        print(#function)
+    }
+    
+    public func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
+        print(#function)
+        let staircaseAddViewController = StairCaseAddViewController(coordinate: coordinate)
+        present(staircaseAddViewController, animated: true)
+    }
+    
+    public func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        print(#function)
+        return true
     }
 
 

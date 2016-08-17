@@ -16,7 +16,9 @@
 		5173A67A1D63FA5600069ABF /* MySanFranciscoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173A6791D63FA5600069ABF /* MySanFranciscoTests.swift */; };
 		5173A6851D63FA5600069ABF /* MySanFranciscoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173A6841D63FA5600069ABF /* MySanFranciscoUITests.swift */; };
 		5173A6941D63FFB200069ABF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5173A6931D63FFB200069ABF /* MapKit.framework */; };
-		E9748A70D1B01D393C20C4E6 /* libPods-MySanFrancisco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D17EAE31D53B0175A8D99BC /* libPods-MySanFrancisco.a */; };
+		5173A6A11D64040D00069ABF /* MSFStaircase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5173A6A01D64040D00069ABF /* MSFStaircase.m */; };
+		5173A6A31D6408E200069ABF /* StairCaseAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173A6A21D6408E200069ABF /* StairCaseAddViewController.swift */; };
+		FEC244F911CF6F0577D30D85 /* Pods_MySanFrancisco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C29E263E39A390D3122DA1A /* Pods_MySanFrancisco.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +58,11 @@
 		5173A6961D6400A600069ABF /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 		5173A6971D6400B200069ABF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5173A6981D6400BD00069ABF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5D17EAE31D53B0175A8D99BC /* libPods-MySanFrancisco.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySanFrancisco.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5173A69E1D64040D00069ABF /* MySanFrancisco-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySanFrancisco-Bridging-Header.h"; sourceTree = "<group>"; };
+		5173A69F1D64040D00069ABF /* MSFStaircase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFStaircase.h; sourceTree = "<group>"; };
+		5173A6A01D64040D00069ABF /* MSFStaircase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFStaircase.m; sourceTree = "<group>"; };
+		5173A6A21D6408E200069ABF /* StairCaseAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StairCaseAddViewController.swift; sourceTree = "<group>"; };
+		9C29E263E39A390D3122DA1A /* Pods_MySanFrancisco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySanFrancisco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECA24D232C97A9F8DEB8535 /* Pods-MySanFrancisco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySanFrancisco.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MySanFrancisco/Pods-MySanFrancisco.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5173A6941D63FFB200069ABF /* MapKit.framework in Frameworks */,
-				E9748A70D1B01D393C20C4E6 /* libPods-MySanFrancisco.a in Frameworks */,
+				FEC244F911CF6F0577D30D85 /* Pods_MySanFrancisco.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,9 +119,10 @@
 		5173A6611D63FA5600069ABF /* MySanFrancisco */ = {
 			isa = PBXGroup;
 			children = (
-				5173A6621D63FA5600069ABF /* AppDelegate.swift */,
-				5173A6641D63FA5600069ABF /* FirstViewController.swift */,
-				5173A6661D63FA5600069ABF /* SecondViewController.swift */,
+				5173A69E1D64040D00069ABF /* MySanFrancisco-Bridging-Header.h */,
+				5173A6991D64011E00069ABF /* App Delegate */,
+				5173A69B1D64013400069ABF /* Persistence */,
+				5173A69A1D64012E00069ABF /* UI */,
 				5173A6681D63FA5600069ABF /* Main.storyboard */,
 				5173A66B1D63FA5600069ABF /* Assets.xcassets */,
 				5173A66D1D63FA5600069ABF /* LaunchScreen.storyboard */,
@@ -152,6 +159,33 @@
 			name = Metadata;
 			sourceTree = "<group>";
 		};
+		5173A6991D64011E00069ABF /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5173A6621D63FA5600069ABF /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		5173A69A1D64012E00069ABF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5173A6641D63FA5600069ABF /* FirstViewController.swift */,
+				5173A6661D63FA5600069ABF /* SecondViewController.swift */,
+				5173A6A21D6408E200069ABF /* StairCaseAddViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		5173A69B1D64013400069ABF /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				5173A69F1D64040D00069ABF /* MSFStaircase.h */,
+				5173A6A01D64040D00069ABF /* MSFStaircase.m */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
 		920A938ED312F54DED04F900 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				5173A6931D63FFB200069ABF /* MapKit.framework */,
-				5D17EAE31D53B0175A8D99BC /* libPods-MySanFrancisco.a */,
+				9C29E263E39A390D3122DA1A /* Pods_MySanFrancisco.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,6 +275,7 @@
 				TargetAttributes = {
 					5173A65E1D63FA5600069ABF = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -365,7 +400,9 @@
 			files = (
 				5173A6671D63FA5600069ABF /* SecondViewController.swift in Sources */,
 				5173A6631D63FA5600069ABF /* AppDelegate.swift in Sources */,
+				5173A6A11D64040D00069ABF /* MSFStaircase.m in Sources */,
 				5173A6651D63FA5600069ABF /* FirstViewController.swift in Sources */,
+				5173A6A31D6408E200069ABF /* StairCaseAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,10 +555,13 @@
 			baseConfigurationReference = 035B0FDFA08BF0A39AB0C884 /* Pods-MySanFrancisco.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MySanFrancisco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Stanera.MySanFrancisco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MySanFrancisco/MySanFrancisco-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -531,10 +571,12 @@
 			baseConfigurationReference = 9ECA24D232C97A9F8DEB8535 /* Pods-MySanFrancisco.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MySanFrancisco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Stanera.MySanFrancisco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MySanFrancisco/MySanFrancisco-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
