@@ -16,8 +16,18 @@
 		5173A67A1D63FA5600069ABF /* MySanFranciscoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173A6791D63FA5600069ABF /* MySanFranciscoTests.swift */; };
 		5173A6851D63FA5600069ABF /* MySanFranciscoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173A6841D63FA5600069ABF /* MySanFranciscoUITests.swift */; };
 		5173A6941D63FFB200069ABF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5173A6931D63FFB200069ABF /* MapKit.framework */; };
-		5173A6A11D64040D00069ABF /* MSFStaircase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5173A6A01D64040D00069ABF /* MSFStaircase.m */; };
 		5173A6A31D6408E200069ABF /* StairCaseAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173A6A21D6408E200069ABF /* StairCaseAddViewController.swift */; };
+		517B88901D8CC8DB00893F6A /* MySanFrancisco.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 517B888E1D8CC8DB00893F6A /* MySanFrancisco.xcdatamodeld */; };
+		517B88921D8CCC8E00893F6A /* SpotAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B88911D8CCC8E00893F6A /* SpotAddViewController.swift */; };
+		517B88941D8CCCCD00893F6A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B88931D8CCCCD00893F6A /* Utilities.swift */; };
+		517B889D1D8CCDED00893F6A /* Spot+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B88951D8CCDED00893F6A /* Spot+CoreDataClass.swift */; };
+		517B889E1D8CCDED00893F6A /* Spot+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B88961D8CCDED00893F6A /* Spot+CoreDataProperties.swift */; };
+		517B889F1D8CCDED00893F6A /* Staircase+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B88971D8CCDED00893F6A /* Staircase+CoreDataClass.swift */; };
+		517B88A01D8CCDED00893F6A /* Staircase+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B88981D8CCDED00893F6A /* Staircase+CoreDataProperties.swift */; };
+		517B88A11D8CCDED00893F6A /* Popos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B88991D8CCDED00893F6A /* Popos+CoreDataClass.swift */; };
+		517B88A21D8CCDED00893F6A /* Popos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B889A1D8CCDED00893F6A /* Popos+CoreDataProperties.swift */; };
+		517B88A31D8CCDED00893F6A /* Picture+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B889B1D8CCDED00893F6A /* Picture+CoreDataClass.swift */; };
+		517B88A41D8CCDED00893F6A /* Picture+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B889C1D8CCDED00893F6A /* Picture+CoreDataProperties.swift */; };
 		FEC244F911CF6F0577D30D85 /* Pods_MySanFrancisco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C29E263E39A390D3122DA1A /* Pods_MySanFrancisco.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,9 +69,18 @@
 		5173A6971D6400B200069ABF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5173A6981D6400BD00069ABF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5173A69E1D64040D00069ABF /* MySanFrancisco-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySanFrancisco-Bridging-Header.h"; sourceTree = "<group>"; };
-		5173A69F1D64040D00069ABF /* MSFStaircase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFStaircase.h; sourceTree = "<group>"; };
-		5173A6A01D64040D00069ABF /* MSFStaircase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFStaircase.m; sourceTree = "<group>"; };
 		5173A6A21D6408E200069ABF /* StairCaseAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StairCaseAddViewController.swift; sourceTree = "<group>"; };
+		517B888F1D8CC8DB00893F6A /* MySanFrancisco.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MySanFrancisco.xcdatamodel; sourceTree = "<group>"; };
+		517B88911D8CCC8E00893F6A /* SpotAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotAddViewController.swift; sourceTree = "<group>"; };
+		517B88931D8CCCCD00893F6A /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		517B88951D8CCDED00893F6A /* Spot+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Spot+CoreDataClass.swift"; sourceTree = "<group>"; };
+		517B88961D8CCDED00893F6A /* Spot+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Spot+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		517B88971D8CCDED00893F6A /* Staircase+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Staircase+CoreDataClass.swift"; sourceTree = "<group>"; };
+		517B88981D8CCDED00893F6A /* Staircase+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Staircase+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		517B88991D8CCDED00893F6A /* Popos+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Popos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		517B889A1D8CCDED00893F6A /* Popos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Popos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		517B889B1D8CCDED00893F6A /* Picture+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Picture+CoreDataClass.swift"; sourceTree = "<group>"; };
+		517B889C1D8CCDED00893F6A /* Picture+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Picture+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9C29E263E39A390D3122DA1A /* Pods_MySanFrancisco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySanFrancisco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECA24D232C97A9F8DEB8535 /* Pods-MySanFrancisco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySanFrancisco.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MySanFrancisco/Pods-MySanFrancisco.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				5173A69E1D64040D00069ABF /* MySanFrancisco-Bridging-Header.h */,
-				5173A6991D64011E00069ABF /* App Delegate */,
-				5173A69B1D64013400069ABF /* Persistence */,
+				5173A6991D64011E00069ABF /* Misc */,
+				5173A69B1D64013400069ABF /* Core Data */,
 				5173A69A1D64012E00069ABF /* UI */,
 				5173A6681D63FA5600069ABF /* Main.storyboard */,
 				5173A66B1D63FA5600069ABF /* Assets.xcassets */,
@@ -159,12 +178,12 @@
 			name = Metadata;
 			sourceTree = "<group>";
 		};
-		5173A6991D64011E00069ABF /* App Delegate */ = {
+		5173A6991D64011E00069ABF /* Misc */ = {
 			isa = PBXGroup;
 			children = (
 				5173A6621D63FA5600069ABF /* AppDelegate.swift */,
 			);
-			name = "App Delegate";
+			name = Misc;
 			sourceTree = "<group>";
 		};
 		5173A69A1D64012E00069ABF /* UI */ = {
@@ -173,17 +192,26 @@
 				5173A6641D63FA5600069ABF /* FirstViewController.swift */,
 				5173A6661D63FA5600069ABF /* SecondViewController.swift */,
 				5173A6A21D6408E200069ABF /* StairCaseAddViewController.swift */,
+				517B88931D8CCCCD00893F6A /* Utilities.swift */,
+				517B88911D8CCC8E00893F6A /* SpotAddViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
 		};
-		5173A69B1D64013400069ABF /* Persistence */ = {
+		5173A69B1D64013400069ABF /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				5173A69F1D64040D00069ABF /* MSFStaircase.h */,
-				5173A6A01D64040D00069ABF /* MSFStaircase.m */,
+				517B88951D8CCDED00893F6A /* Spot+CoreDataClass.swift */,
+				517B88961D8CCDED00893F6A /* Spot+CoreDataProperties.swift */,
+				517B88971D8CCDED00893F6A /* Staircase+CoreDataClass.swift */,
+				517B88981D8CCDED00893F6A /* Staircase+CoreDataProperties.swift */,
+				517B88991D8CCDED00893F6A /* Popos+CoreDataClass.swift */,
+				517B889A1D8CCDED00893F6A /* Popos+CoreDataProperties.swift */,
+				517B889B1D8CCDED00893F6A /* Picture+CoreDataClass.swift */,
+				517B889C1D8CCDED00893F6A /* Picture+CoreDataProperties.swift */,
+				517B888E1D8CC8DB00893F6A /* MySanFrancisco.xcdatamodeld */,
 			);
-			name = Persistence;
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 		920A938ED312F54DED04F900 /* Pods */ = {
@@ -398,11 +426,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517B88A41D8CCDED00893F6A /* Picture+CoreDataProperties.swift in Sources */,
 				5173A6671D63FA5600069ABF /* SecondViewController.swift in Sources */,
 				5173A6631D63FA5600069ABF /* AppDelegate.swift in Sources */,
-				5173A6A11D64040D00069ABF /* MSFStaircase.m in Sources */,
+				517B88A31D8CCDED00893F6A /* Picture+CoreDataClass.swift in Sources */,
+				517B88941D8CCCCD00893F6A /* Utilities.swift in Sources */,
+				517B889E1D8CCDED00893F6A /* Spot+CoreDataProperties.swift in Sources */,
+				517B88A01D8CCDED00893F6A /* Staircase+CoreDataProperties.swift in Sources */,
+				517B88A11D8CCDED00893F6A /* Popos+CoreDataClass.swift in Sources */,
+				517B88921D8CCC8E00893F6A /* SpotAddViewController.swift in Sources */,
 				5173A6651D63FA5600069ABF /* FirstViewController.swift in Sources */,
+				517B889D1D8CCDED00893F6A /* Spot+CoreDataClass.swift in Sources */,
 				5173A6A31D6408E200069ABF /* StairCaseAddViewController.swift in Sources */,
+				517B88A21D8CCDED00893F6A /* Popos+CoreDataProperties.swift in Sources */,
+				517B88901D8CC8DB00893F6A /* MySanFrancisco.xcdatamodeld in Sources */,
+				517B889F1D8CCDED00893F6A /* Staircase+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +713,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		517B888E1D8CC8DB00893F6A /* MySanFrancisco.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				517B888F1D8CC8DB00893F6A /* MySanFrancisco.xcdatamodel */,
+			);
+			currentVersion = 517B888F1D8CC8DB00893F6A /* MySanFrancisco.xcdatamodel */;
+			path = MySanFrancisco.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5173A6571D63FA5600069ABF /* Project object */;
 }
